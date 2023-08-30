@@ -1,5 +1,42 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --cor-primaria: rgb(193, 240, 255);
+  --cor-letras: rgb(36, 33, 33);
+  --cor-oposta: rgb(245, 211, 93);
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  background-color: var(--cor-primaria);
+  font-family: "Inter", sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+
+.navbar-toggler{
+    background-color: var(--cor-oposta);
+}
+
+header h1 {
+  font-size: 30px;
+  text-align: center;
+  color: var(--cor-letras);
+  font-weight: 200;
+}
+
+.sobre-mim{
+    margin-top: 30px;
+}
+
+.habilidades{
+    margin-top: 25px;
+    border: 1px solid black;
+    border-radius: 10px 2px 40px;
 }
