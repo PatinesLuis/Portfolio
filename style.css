@@ -19,16 +19,30 @@ body {
   font-family: "Inter", sans-serif;
   font-family: "Oswald", sans-serif;
 }
-
-.navbar-toggler{
-    background-color: var(--cor-oposta);
+.navbar{
+  background-color: var(--cor-oposta);
+  padding: 0;
 }
 
+.navbar-nav{
+  margin-left: 40%;
+}
 header h1 {
   font-size: 30px;
   text-align: center;
   color: var(--cor-letras);
   font-weight: 200;
+  padding-top: 80px;
+}
+
+.title-projeto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+strong{
+  color: #407BFF;
 }
 
 .sobre-mim{
