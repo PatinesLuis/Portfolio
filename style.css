@@ -1,3 +1,5 @@
+/* Padronização */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,9 @@
   --cor-secundaria: rgb(255, 255, 255);
   --cor-letras: rgb(255, 255, 255);
   --cor-oposta: rgb(245, 211, 93);
-  --subtitulos: rgb(59, 33, 119);
+  --subtitulos: rgb(104, 66, 192);
+  --CardsProjetos: rgb(40, 35, 51);
+  --cor-tituloProjeto: rgb(174, 174, 175);
 }
 
 body {
@@ -20,9 +24,43 @@ body {
   animation: inicializar 4s forwards;
 }
 
+.col-md-3 a{
+  text-decoration: none;
+}
+
+
+/* TITULOS DO PROJETO */
 h1{
   font-size: 15px;
 }
+
+.apresentacao h2 {
+  text-align: center;
+  color: var(--cor-letras);
+}
+
+h3{
+  color: var(--subtitulos);
+  font-weight: bold;
+  padding: 25px;
+}
+
+h4{
+  color: var(--cor-tituloProjeto);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 12px;
+}
+
+h5{
+  color: var(--cor-oposta);
+  padding: 12px;
+}
+
+
+/* navegação e apresentaçao */
+
+
 .navbar{
   background-color: var(--cor-oposta);
   padding: 0;
@@ -69,10 +107,6 @@ h1{
   font-size: 45px;
 }
 
-.apresentacao h2 {
-  text-align: center;
-  color: var(--cor-letras);
-}
 .apresentacao img{
   margin: auto;
 }
@@ -109,11 +143,9 @@ strong{
   right: 100px;
 }
 
-h3{
-  color: var(--subtitulos);
-  font-weight: bold;
-  padding: 25px;
-}
+
+
+/* linguagens */
 
 
 .section-skil{
@@ -181,4 +213,57 @@ h3{
   to{
     opacity: 1;
   }
+}
+
+/* projetos */
+
+.cardprojeto{
+  background-color: var(--CardsProjetos);
+  border-radius: 15px 12px;
+  box-shadow: 1px 1px 20px var(--CardsProjetos);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  transition: ease-in 0.5s;
+}
+
+
+
+.cardprojeto:hover{
+  cursor: pointer;
+  background-color: rgb(12, 31, 68);
+}
+
+.img-projeto{
+  margin-left: 30px;
+}
+
+.ling-projeto ul{
+  padding: 0;
+}
+
+.ling-projeto ul li {
+  color: var(--cor-letras);
+  display: inline-block;
+  margin: 10px;
+  text-shadow: 1px -2px 10px rgb(238, 238, 238);
+}
+
+.ling-projeto ul li:hover{
+  color: rgb(223, 226, 37);
+
+}
+
+.img-projeto img{
+  transition: .4s all ease-in-out;
+}
+
+.img-projeto img:hover{
+  transform: scale(1.25);
+}
+
+.desc-projeto p{
+  padding: 10px;
+  text-align: center;
+  color: rgb(131, 125, 138);
 }
