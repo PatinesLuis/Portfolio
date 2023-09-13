@@ -225,6 +225,7 @@ strong{
   flex-direction: column;
   align-items: center;
   transition: ease-in 0.5s;
+  height: 490px;
 }
 
 
