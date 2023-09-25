@@ -14,7 +14,9 @@
   --cor-oposta: rgb(245, 211, 93);
   --subtitulos: rgb(104, 66, 192);
   --CardsProjetos: rgb(40, 35, 51);
+  --CardsSobremim: rgb(53, 57, 92);
   --cor-tituloProjeto: rgb(174, 174, 175);
+
 }
 
 body {
@@ -267,4 +269,36 @@ strong{
   padding: 10px;
   text-align: center;
   color: rgb(131, 125, 138);
+}
+
+/* sobre mim */
+
+.card-tempo{
+  width: 180px;
+  height: 260px;
+  background-color: var(--CardsSobremim);
+  padding: 5px 10px;
+  color: var(--cor-letras);
+  border-radius: 8px 14px;
+  margin: 6px;
+  padding: 12px;
+}
+
+.card-tempo .ano{
+  color: rgb(43, 255, 255);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.card-tempo .sobre-texto{
+  margin-top: 15px;
+  text-justify: unset;
+}
+
+.ct2{
+  margin-top: 15px;
+}
+
+footer{
+  background-color: var(--cor-oposta);
 }
