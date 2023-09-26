@@ -83,7 +83,8 @@ h5{
   letter-spacing: 2px;
   border-bottom: 1px solid rgb(255, 255, 255);
   margin-left: 12px;
-    
+  font-size: 90%;
+  font-weight: bold;
 }
 
 .navbar-nav ul li a:hover{
@@ -273,6 +274,10 @@ strong{
 
 /* sobre mim */
 
+.sobre-mim{
+  margin-bottom: 5%;
+}
+
 .card-tempo{
   width: 180px;
   height: 260px;
@@ -295,10 +300,32 @@ strong{
   text-justify: unset;
 }
 
-.ct2{
-  margin-top: 15px;
+.sobre-texto span{
+  color: rgb(255, 217, 0);
 }
+
+.ct2{
+  margin-top: 25px;
+  border-radius: 14px 8px;
+}
+
+/* footer */
 
 footer{
   background-color: var(--cor-oposta);
+}
+
+.redes-sociais{
+  padding: 15px;
+} 
+
+.redes-sociais img{
+  width: 70px;
+  display: inline-block;
+  padding: 10px;
+  transition: ease-in 0.5s;
+}
+
+.redes-sociais img:hover{
+  width: 100px;
 }
