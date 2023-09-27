@@ -22,9 +22,9 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
+        <div class="container-fluid nav-responsive">
           <a class="navbar-brand" href="#">
-            <img src="img/icon.svg" width="40px" alt="" />
+            <img class="img-fluid" src="img/icon.svg" width="40px" alt="" />
             Portfólio Developer
           </a>
           <button
@@ -63,28 +63,29 @@
       <div class="container">
         <div class="apresentacao">
           <h1 class="digitando">
-            Luis Eduardo Patines | Desenvolvedor de sistemas
+            Luis Eduardo Patines | Desenvolvedor de sistemas 
           </h1>
           <h2>Futuro desenvolvedor <strong>FullStack</strong></h2>
 
+          
           <div class="botao">
             <a href="" class="botaocv">DOWNLOAD CV</a>
           </div>
-          <img src="img/developer.svg" width="250px" />
+          <img class="img-dev" class="img-fluid" src="img/developer.svg" width="250px" />
         </div>
 
-        <img class="img_cod" id="habilidades" src="img/print_cod.png" width="20%" alt="" />
+        <img class="img_cod img-fluid" id="habilidades" src="img/print_cod.png" width="20%" alt="" />
       </div>
 
       <div class="section-skil">
         <div class="container">
           <h3>👾 HABILIDADES</h3>
           <div class="grupoImg">
-            <div class="imagem01"><img src="img/bootstrap.png" alt="" /></div>
-            <div class="imagem02"><img src="img/Java.png" alt="" /></div>
-            <div class="imagem01"><img src="img/html e css.png" alt="" /></div>
-            <div class="imagem02"><img src="img/mysql.png" alt="" /></div>
-            <div class="imagem01"><img src="img/excel.png" alt="" /></div>
+            <div class="imagem01"><img class="img-fluid" src="img/bootstrap.png" alt="" /></div>
+            <div class="imagem02"><img class="img-fluid" src="img/Java.png" alt="" /></div>
+            <div class="imagem01"><img class="img-fluid" src="img/html e css.png" alt="" /></div>
+            <div class="imagem02"><img class="img-fluid" src="img/mysql.png" alt="" /></div>
+            <div class="imagem01"><img class="img-fluid" src="img/excel.png" alt="" /></div>
           </div>
         </div>
       </div>
@@ -101,7 +102,7 @@
                 <div class="cardprojeto">
                   <div class="img-projeto">
                     <h4>CLONE SPOTIFY</h4>
-                    <img src="img/ProjetoSpotify.png" width="80%" alt="" />
+                    <img src="img/ProjetoSpotify.png" class="img-fluid" width="80%" alt="" />
                   </div>
                   <div class="ling-projeto">
                     <h5>Linguagens utilizadas</h5>
@@ -128,7 +129,7 @@
                 <div class="cardprojeto">
                   <div class="img-projeto">
                     <h4>MENU DE LINKS</h4>
-                    <img src="img/ProjetoMenuLinks.png" width="80%" alt="" />
+                    <img src="img/ProjetoMenuLinks.png" class="img-fluid" width="80%" alt="" />
                   </div>
                   <div class="ling-projeto">
                     <h5>Linguagens utilizadas</h5>
@@ -160,13 +161,50 @@
               <div class="card-tempo">
                 <p class="ano">2019</p>
                  <p class="sobre-texto">Inicio meu estudos em programação em um curso técnico na escola QI realizando 
-                  <span>Técnico em informatica</span>. Descobri o mundo da programação realizando meu primeiro 'hello world' em Java.</p>
+                  <span>Técnico em informatica</span>. Descobri o mundo da programação realizando meu ... <a class="lermais" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    LER MAIS
+                  </A>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">2019</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Inicio meu estudos em programação em um curso técnico na escola QI realizando 
+                  <span>Técnico em informatica</span>. Descobri o mundo da programação realizando meu primeiro 'hello word' em java. Durante este ano aprendi Banco de dados com MySQL, <span>Front end</span> com html, css e futuramente bootstrap. 
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></p>
               </div>
             </div>
             <div class="col-md-2">
               <div class="card-tempo ct2">
                 <p class="ano">2020</p>
-                 <p class="sobre-texto">Inicio da pandemia. Começo a estudar EAD, tanto no meu ultimo ano da escola, quanto em meu curso técnico. Foi então que descobri que sou mais produtivo estudando em casa.</p>
+                 <p class="sobre-texto">Inicio da pandemia. Começo a estudar EAD, tanto no meu ultimo ano da escola, quanto em meu curso técnico. Foi então que descobri que sou mais produtivo estudando em casa... <a class="lermais" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                  LER MAIS
+                </A>
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">2020</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Inicio da pandemia. Começo a estudar EAD, tanto no meu ultimo ano da escola, quanto em meu curso técnico. Foi então que descobri que sou mais produtivo estudando em casa. Em meu curso técnico começo a entender o processo de como funciona de um software, desde o levantamento dos requisitos, gestão, documentação e etc. Estudo uma cadeira de <span>Java Android</span>.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div></p></p>
               </div>
             </div>
             <div class="col-md-2">
@@ -178,13 +216,53 @@
             <div class="col-md-2">
               <div class="card-tempo ct2">
                 <p class="ano">2022</p>
-                 <p class="sobre-texto">Um grande ano. Inicio minha <span>graduação em analise e desenvolvimento de sistemas,</span>Além de ser promovido a Backoffice e completar 1 ano de empresa. Futuramente mudei a universidade.</p>
+                 <p class="sobre-texto">Um grande ano. Inicio minha <span>graduação em analise e desenvolvimento de sistemas,</span>Além de ser promovido a Backoffice e completar 1 ano de empresa. Futuramente mudei a universidade.
+                  <a class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    LER MAIS
+                  </A>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ANO</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></p>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card-tempo">
                 <p class="ano">2023</p>
-                 <p class="sobre-texto">Completando 2 anos na empresa onde estou. Me destacando com um conhecimento intermediario em <span>excel.</span> Focado na graduação e em me desenvolver como <span>DEV JAVA.</span></p>
+                 <p class="sobre-texto">Completando 2 anos na empresa onde estou. Me destacando com um conhecimento intermediario em <span>excel.</span> Focado na graduação e em me desenvolver como <span>DEV JAVA.</span>
+                <!-- Button trigger modal -->
+<a class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  LER MAIS
+</A>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">ANO</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+                </p>
               </div>
             </div>
           </div>
@@ -193,29 +271,9 @@
 
       <footer>
         <div class="redes-sociais">
-          <a href="https://github.com/PatinesLuis"><img src="img/github.png" alt="github"></a>
-          <a href="https://www.linkedin.com/in/luiseduardopatines/"><img src="img/linkeedin.png" alt="linkeedin"></a>
-          <!-- Button trigger modal -->
-<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  EMAIL PARA CONTATO
-</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">GMAIL</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        luispatines17@gmail.com
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-        </div>
+          <div class="rs-div"><a href="https://github.com/PatinesLuis"><img src="img/github.png" alt="github"></a></div>
+          <div class="rs-div"><a href="https://www.linkedin.com/in/luiseduardopatines/"><img src="img/linkeedin.png" alt="linkeedin"></a></div>
+          </div>
       </footer>
     </main>
 

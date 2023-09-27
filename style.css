@@ -289,6 +289,12 @@ strong{
   padding: 12px;
 }
 
+.lermais{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
 .card-tempo .ano{
   color: rgb(43, 255, 255);
   font-weight: bold;
@@ -309,6 +315,19 @@ strong{
   border-radius: 14px 8px;
 }
 
+.modal-header{
+  color: rgb(56, 52, 52);
+  font-weight: bold;
+}
+
+.modal-body{
+  color: rgb(0, 0, 0);
+}
+
+.modal-body span{
+  color: rgb(4, 95, 138);
+} 
+
 /* footer */
 
 footer{
@@ -316,16 +335,100 @@ footer{
 }
 
 .redes-sociais{
-  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 } 
+
+.rs-div{
+  padding: 20px;
+  transition: ease-in 0.2s;
+}
 
 .redes-sociais img{
   width: 70px;
-  display: inline-block;
   padding: 10px;
-  transition: ease-in 0.5s;
 }
 
-.redes-sociais img:hover{
-  width: 100px;
+.redes-sociais .rs-div:hover{
+  transform: scale(1.25);
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 575.98px){
+  .apresentacao .digitando{
+   font-size: 25px;
+  }
+
+  .nav-responsive{
+    margin: 0%;
+    padding: 0;
+  }
+
+  .navbar .nav-responsive{
+    width: 100%;
+  }
+
+  .navbar-toggler{
+    margin-right: 40px;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  .img-dev{
+    width: 120px;
+  }
+
+
+ .section-skil{
+   margin-top: 120px;
+ }
+
+ .img_cod{
+   right: 5px;
+   width: 140px;
+   bottom: 10px;
+ }
+
+ .imagem01 img{
+   height: 60px;
+   width: 60px;
+   margin: 0%;
+ }
+
+ .imagem02 img{
+  height: 60px;
+  width: 60px;
+  margin: 0%;
+}
+
+.section-skil .container{
+  padding: 0;
+}
+
+.cardprojeto{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+}
+
+@media (max-width: 767.98px) { 
+  
+ }
+
+
+@media (max-width: 991.98px) { 
+
+ }
+
+@media (max-width: 1199.98px) { 
+
+ }
+
+@media (max-width: 1399.98px) { 
+
+ }
