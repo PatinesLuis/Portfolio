@@ -278,6 +278,17 @@ strong{
   margin-bottom: 5%;
 }
 
+.blur{
+  position: absolute;
+  box-shadow: 0 0 120px 50px rgb(19, 88, 167);
+  z-index: -100;
+}
+
+.blur2{
+  right: 50px;
+
+}
+
 .card-tempo{
   width: 180px;
   height: 260px;
